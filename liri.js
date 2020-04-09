@@ -35,9 +35,17 @@ switch (command) {
     random();
     break;
   default:
-      console.log(" ");
+    console.log(" ");
     console.log("==============================");
     console.log("Please submit a valid request!");
     console.log("==============================");
     console.log(" ");
 }
+
+function concert (){
+    var concertUrl =  `https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp`;
+    
+    axios.get(concertUrl).then(function (response){
+        console.log(response.data);
+    });
+};
