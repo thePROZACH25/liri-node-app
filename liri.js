@@ -72,6 +72,7 @@ function music() {
     console.log(
       `\nArtist: ${radio.tracks.items[0].artists[0].name}\nTrack: ${radio.tracks.items[0].name}\nPreview Link: ${radio.tracks.items[0].uri}\nAlbum Name: ${radio.tracks.items[0].album.name}\n\n-------------------------------\n`
     );
+    
   });
 }
 
@@ -97,8 +98,11 @@ function random() {
     }
     var dataArr = data.split(",");
 
-    command = dataArr[0];
-    input = dataArr[1];
+    if(dataArr[0] === "spotify-this-song"){
+        input = dataArr[1];
+        music();
+    }
+    
 
     userInputs(command, input);
   });
