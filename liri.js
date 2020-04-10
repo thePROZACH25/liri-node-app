@@ -20,24 +20,28 @@ var command = process.argv[2];
 // Slice and rejoin incase artist or band has spaces in the name
 var input = process.argv.slice(3).join(" ");
 
-switch (command) {
-  case "concert-this":
-    concert();
-    break;
-  case "spotify-this-song":
-    music();
-    break;
-  case "movie-this":
-    movie();
-    break;
-  case "do-what-it-says":
-    random();
-    break;
-  default:
-    console.log(
-      `\n\n==============================\nPlease submit a valid request!\n==============================\n`
-    );
+function userInputs(command, input) {
+  switch (command) {
+    case "concert-this":
+      concert();
+      break;
+    case "spotify-this-song":
+      music();
+      break;
+    case "movie-this":
+      movie();
+      break;
+    case "do-what-it-says":
+      random(input);
+      break;
+    default:
+      console.log(
+        `\n\n==============================\nPlease submit a valid request!\n==============================\n`
+      );
+  }
 }
+
+userInputs(command, input);
 
 // Bands In Town Function
 function concert() {
@@ -58,14 +62,13 @@ function concert() {
 
 // Spotify Function
 function music() {
-  spotify.search({ type: "track", query: input }, function (
-    err,
-    radio
-  ) {
+  spotify.search({ type: "track", query: input }, function (err, radio) {
     if (err) {
       return console.log("Error occurred: " + err);
     }
-    console.log(`\nArtist: ${radio.tracks.items[0].artists[0].name}\nTrack: ${radio.tracks.items[0].name}\nPreview Link: ${radio.tracks.items[0].uri}\nAlbum Name: ${radio.tracks.items[0].album.name}\n\n-------------------------------`);
+    console.log(
+      `\nArtist: ${radio.tracks.items[0].artists[0].name}\nTrack: ${radio.tracks.items[0].name}\nPreview Link: ${radio.tracks.items[0].uri}\nAlbum Name: ${radio.tracks.items[0].album.name}\n\n-------------------------------`
+    );
   });
 }
 
@@ -81,3 +84,16 @@ function movie() {
 }
 
 // Random.txt function
+function random() {
+  fs.readFile("random.txt", "utf8", function (err, data) {
+    if (err) {
+      return console.log(err);
+    }
+    var dataArr = data.split(",");
+
+    command = dataArr[0];
+    input = dataArr[1];
+
+    userInputs(command, input);
+  });
+}
