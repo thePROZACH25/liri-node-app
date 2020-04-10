@@ -62,23 +62,29 @@ function concert() {
 
 // Spotify Function
 function music() {
-  spotify.search({ type: "track", query: input }, function (err, radio) {
+    if (command === "spotify-this-song" && process.argv[3] === undefined){
+        input = "The Sign";
+    }
+  spotify.search({ type: "track", query: input, limit: 1 }, function (err, radio) {
     if (err) {
       return console.log("Error occurred: " + err);
     }
     console.log(
-      `\nArtist: ${radio.tracks.items[0].artists[0].name}\nTrack: ${radio.tracks.items[0].name}\nPreview Link: ${radio.tracks.items[0].uri}\nAlbum Name: ${radio.tracks.items[0].album.name}\n\n-------------------------------`
+      `\nArtist: ${radio.tracks.items[0].artists[0].name}\nTrack: ${radio.tracks.items[0].name}\nPreview Link: ${radio.tracks.items[0].uri}\nAlbum Name: ${radio.tracks.items[0].album.name}\n\n-------------------------------\n`
     );
   });
 }
 
 // IMDB Function
 function movie() {
+    if (command === "movie-this" && process.argv[3] === undefined){
+        input = "Mr. Nobody";
+    }
   var movieURL = `http://www.omdbapi.com/?t=${input}&y=&plot=short&apikey=trilogy`;
 
   axios.get(movieURL).then(function (boxOffice) {
     console.log(
-      `\nTitle: ${boxOffice.data.Title}\nRelease Date: ${boxOffice.data.Released}\nIMDB Rating: ${boxOffice.data.Ratings[0].Value}\nRotten Tomatoes Rating: ${boxOffice.data.Ratings[1].Value}\nCountry: ${boxOffice.data.Country}\nLangauge: ${boxOffice.data.Language}\nPlot: ${boxOffice.data.Plot}\nActors: ${boxOffice.data.Actors}\n\n-------------------------------`
+      `\nTitle: ${boxOffice.data.Title}\nRelease Date: ${boxOffice.data.Released}\nIMDB Rating: ${boxOffice.data.Ratings[0].Value}\nRotten Tomatoes Rating: ${boxOffice.data.Ratings[1].Value}\nCountry: ${boxOffice.data.Country}\nLangauge: ${boxOffice.data.Language}\nPlot: ${boxOffice.data.Plot}\nActors: ${boxOffice.data.Actors}\n\n-------------------------------\n`
     );
   });
 }
