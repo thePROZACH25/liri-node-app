@@ -1,3 +1,4 @@
+// 
 require("dotenv").config();
 
 // Grab Spotify keys securely
@@ -16,9 +17,11 @@ var fs = require("fs");
 var Spotify = require(`node-spotify-api`);
 var spotify = new Spotify(keys.spotify);
 
+// 
 var command = process.argv[2];
 // Slice and rejoin incase artist or band has spaces in the name
 var input = process.argv.slice(3).join(" ");
+
 
 function userInputs(command, input) {
   switch (command) {
@@ -38,8 +41,12 @@ function userInputs(command, input) {
       console.log(
         `\n\n==============================\nPlease submit a valid request!\n==============================\n`
       );
-  }
+    }
 }
+
+// Calling the userInput()
+userInputs(command, input);
+
 // Write to Log.txt file
 function writeToLog() {
   fs.appendFile("log.txt", `${command}, ${input}\n`, function (err) {
@@ -51,7 +58,6 @@ function writeToLog() {
   });
 }
 
-userInputs(command, input);
 
 // Bands In Town Function
 function concert(artist) {
