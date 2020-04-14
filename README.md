@@ -104,10 +104,17 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
        * Plot of the movie
        * Actors in the movie
      ```
+     <img src = "images/Screen Shot 2020-04-13 at 11.20.38 PM.png">
+
+     <img src="images/Screen Shot 2020-04-14 at 12.14.38 AM.png">
+
+     <img src="images/Screen Shot 2020-04-14 at 12.14.46 AM.png">
 
    * If the user does not enter a movie selection, the program outputs data for the movie 'Mr. Nobody.'
 
-   <img src = "images/Screen Shot 2020-04-13 at 11.20.38 PM.png">
+   <img src = "images/Screen Shot 2020-04-14 at 12.14.01 AM.png">
+
+   <img src = "images/Screen Shot 2020-04-14 at 12.14.09 AM.png">
 
 4. **`node liri.js do-what-it-says`**
 
