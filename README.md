@@ -82,13 +82,17 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      * The album containing the song
 
-   * If no song is provided, the program defaults to "The Sign" by Ace of Base.
-
    <img src="images/Screen Shot 2020-04-13 at 11.20.33 PM.png">
 
    <img src="images/Screen Shot 2020-04-14 at 12.08.38 AM.png">
 
    <img src="images/Screen Shot 2020-04-14 at 12.08.44 AM.png">
+
+   * If no song is provided, the program defaults to "The Sign" by Ace of Base.
+
+  <img src="images/Screen Shot 2020-04-14 at 12.26.04 AM.png">
+
+  <img src="images/Screen Shot 2020-04-14 at 12.26.09 AM.png">
 
 3. **`node liri.js movie-this '<movie name here>'`**
 
