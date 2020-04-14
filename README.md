@@ -64,7 +64,7 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      * Date of the Event (using the format "MM/DD/YYYY")
 
-     <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png width=100px">
+     <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png">
 
      <img src="images/Screen Shot 2020-04-14 at 12.00.09 AM.png">
 
@@ -139,3 +139,7 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
      <img src = "images/Screen Shot 2020-04-14 at 12.39.10 AM.png">
 
      <img src = "images/Screen Shot 2020-04-14 at 12.39.48 AM.png">
+
+5. ** Bonus`log.txt`
+
+    <img src = "images/Screen Shot 2020-04-14 at 12.50.10 AM.png">
