@@ -64,7 +64,7 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      * Date of the Event (using the format "MM/DD/YYYY")
 
-     <img scr="images/Screen Shot 2020-04-13 at 11.20.26 PM.png">
+     <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png">
 
 2. **`node liri.js spotify-this-song '<song name here>'`**
 
