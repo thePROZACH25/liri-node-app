@@ -86,6 +86,10 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
    <img src="images/Screen Shot 2020-04-13 at 11.20.33 PM.png">
 
+   <img src="images/Screen Shot 2020-04-14 at 12.08.38 AM.png">
+
+   <img src="images/Screen Shot 2020-04-14 at 12.08.44 AM.png">
+
 3. **`node liri.js movie-this '<movie name here>'`**
 
    * This will output the following movie information to your terminal/bash window:
