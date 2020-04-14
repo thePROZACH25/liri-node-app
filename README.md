@@ -64,11 +64,11 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      * Date of the Event (using the format "MM/DD/YYYY")
 
-     <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png">
+     <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png" width="100">
 
-     <img src="images/Screen Shot 2020-04-14 at 12.00.09 AM.png">
+     <img src="images/Screen Shot 2020-04-14 at 12.00.09 AM.png" width="100">
 
-     <img src="images/Screen Shot 2020-04-14 at 12.00.17 AM.png">
+     <img src="images/Screen Shot 2020-04-14 at 12.00.17 AM.png" width="100">
 
 2. **`node liri.js spotify-this-song '<song name here>'`**
 
@@ -82,17 +82,17 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      * The album containing the song
 
-   <img src="images/Screen Shot 2020-04-13 at 11.20.33 PM.png">
+   <img src="images/Screen Shot 2020-04-13 at 11.20.33 PM.png" width="100">
 
-   <img src="images/Screen Shot 2020-04-14 at 12.08.38 AM.png">
+   <img src="images/Screen Shot 2020-04-14 at 12.08.38 AM.png" width="100">
 
-   <img src="images/Screen Shot 2020-04-14 at 12.08.44 AM.png">
+   <img src="images/Screen Shot 2020-04-14 at 12.08.44 AM.png" width="100">
 
    * If no song is provided, the program defaults to "The Sign" by Ace of Base.
 
-  <img src="images/Screen Shot 2020-04-14 at 12.26.04 AM.png">
+  <img src="images/Screen Shot 2020-04-14 at 12.26.04 AM.png" width="100">
 
-  <img src="images/Screen Shot 2020-04-14 at 12.26.09 AM.png">
+  <img src="images/Screen Shot 2020-04-14 at 12.26.09 AM.png" width="100">
 
 3. **`node liri.js movie-this '<movie name here>'`**
 
@@ -108,38 +108,38 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
        * Plot of the movie
        * Actors in the movie
      ```
-     <img src = "images/Screen Shot 2020-04-13 at 11.20.38 PM.png">
+     <img src = "images/Screen Shot 2020-04-13 at 11.20.38 PM.png" width="100">
 
-     <img src="images/Screen Shot 2020-04-14 at 12.14.38 AM.png">
+     <img src="images/Screen Shot 2020-04-14 at 12.14.38 AM.png" width="100">
 
-     <img src="images/Screen Shot 2020-04-14 at 12.14.46 AM.png">
+     <img src="images/Screen Shot 2020-04-14 at 12.14.46 AM.png" width="100">
 
    * If the user does not enter a movie selection, the program outputs data for the movie 'Mr. Nobody.'
 
-   <img src = "images/Screen Shot 2020-04-14 at 12.14.01 AM.png">
+   <img src = "images/Screen Shot 2020-04-14 at 12.14.01 AM.png" width="100">
 
-   <img src = "images/Screen Shot 2020-04-14 at 12.14.09 AM.png">
+   <img src = "images/Screen Shot 2020-04-14 at 12.14.09 AM.png" width="100">
 
 4. **`node liri.js do-what-it-says`**
 
      * Runs `spotify-this-song` for "I Want it That Way".
 
-     <img src = "images/Screen Shot 2020-04-13 at 11.20.45 PM.png">
+     <img src = "images/Screen Shot 2020-04-13 at 11.20.45 PM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.34.49 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.34.49 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.33.54 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.33.54 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.34.55 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.34.55 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.35.39 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.35.39 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.36.41 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.36.41 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.39.10 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.39.10 AM.png" width="100">
 
-     <img src = "images/Screen Shot 2020-04-14 at 12.39.48 AM.png">
+     <img src = "images/Screen Shot 2020-04-14 at 12.39.48 AM.png" width="100">
 
 5. ** Bonus`log.txt`
 
-    <img src = "images/Screen Shot 2020-04-14 at 12.50.10 AM.png">
+    <img src = "images/Screen Shot 2020-04-14 at 12.50.10 AM.png" width="100">
