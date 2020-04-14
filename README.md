@@ -66,6 +66,10 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
      <img src="images/Screen Shot 2020-04-13 at 11.20.26 PM.png">
 
+     <img src="images/Screen Shot 2020-04-14 at 12.00.09 AM.png">
+
+     <img src="images/Screen Shot 2020-04-14 at 12.00.17 AM.png">
+
 2. **`node liri.js spotify-this-song '<song name here>'`**
 
    * Displays the following information about the selected song in your terminal/bash window
@@ -79,6 +83,8 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
      * The album containing the song
 
    * If no song is provided, the program defaults to "The Sign" by Ace of Base.
+
+   <img src="images/Screen Shot 2020-04-13 at 11.20.33 PM.png">
 
 3. **`node liri.js movie-this '<movie name here>'`**
 
@@ -97,6 +103,10 @@ Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands thro
 
    * If the user does not enter a movie selection, the program outputs data for the movie 'Mr. Nobody.'
 
+   <img src = "images/Screen Shot 2020-04-13 at 11.20.38 PM.png">
+
 4. **`node liri.js do-what-it-says`**
 
      * Runs `spotify-this-song` for "I Want it That Way".
+
+     <img src = "images/Screen Shot 2020-04-13 at 11.20.45 PM.png">
