@@ -53,7 +53,7 @@ function writeToLog() {
     if (err) {
       console.log(err);
     } else {
-      console.log("Content Added!");
+      console.log("\n.........Content Added!.........");
     }
   });
 }
@@ -127,8 +127,7 @@ function random() {
     } else if (dataArr[0] === "concert-this") {
       input = dataArr[1];
       length_of_name = input.length - 1;
-
-      input = input.slice(1, length_of_name);
+       input = input.slice(1, length_of_name);
       concert(input);
     } else if (dataArr[0] === "movie-this") {
       input = dataArr[1];
